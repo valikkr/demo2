@@ -79,7 +79,6 @@ resource "aws_subnet" "private_1" {
 
 
 resource "aws_subnet" "public" {
-#  count                   = 1
   cidr_block              = "172.17.2.0/24"
   availability_zone       = "eu-central-1a"
   vpc_id                  = aws_vpc.main.id
